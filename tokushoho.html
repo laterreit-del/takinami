@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特定商取引法に基づく表記 | 瀧波一誠</title>
+<meta name="description" content="瀧波一誠による個別レビュー・診断サービスの特定商取引法に基づく表記">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;500;700&family=Fraunces:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0908;
+  --ink-soft: #1c1a17;
+  --paper: #f7f1e4;
+  --paper-deep: #ede4d0;
+  --rust: #923d26;
+  --ochre: #b87a3e;
+  --rule-soft: #c8bba0;
+  --muted: #5a5248;
+  --font-display: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-body: 'Zen Kaku Gothic Antique', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  --font-latin: 'Fraunces', Georgia, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-header {
+  border-bottom: 2px solid var(--ink);
+  padding: 1.5rem 0;
+  background: rgba(247, 241, 228, 0.95);
+}
+
+.site-header-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.brand span {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}
+
+.back-link {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover { color: var(--rust); border-bottom-color: var(--rust); }
+
+main {
+  padding: 4rem 0 6rem;
+}
+
+.page-eyebrow {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: var(--rust);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  font-weight: 500;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  letter-spacing: 0.015em;
+}
+
+.page-lead {
+  font-size: 0.97rem;
+  color: var(--ink-soft);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--ink);
+  line-height: 1.95;
+}
+
+.tokushoho-list {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0;
+}
+
+.tokushoho-list dt,
+.tokushoho-list dd {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.tokushoho-list dt {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  padding-right: 1.5rem;
+  border-right: 1px solid var(--rule-soft);
+}
+
+.tokushoho-list dd {
+  padding-left: 1.5rem;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.95;
+}
+
+.tokushoho-list dd small {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.tokushoho-list dd ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.tokushoho-list dd ul li {
+  padding-left: 1em;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+
+.tokushoho-list dd ul li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+}
+
+.note-box {
+  margin-top: 4rem;
+  padding: 1.85rem;
+  background: var(--paper-deep);
+  border-left: 4px solid var(--rust);
+}
+
+.note-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: var(--ink);
+}
+
+.note-box p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.95;
+  margin-bottom: 0.85rem;
+}
+
+.note-box p:last-child { margin-bottom: 0; }
+
+.note-box a {
+  color: var(--rust);
+  border-bottom: 1px solid var(--rust);
+  padding-bottom: 1px;
+}
+
+.last-updated {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--ink);
+  text-align: right;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.site-footer {
+  background: var(--ink);
+  color: rgba(247, 241, 228, 0.7);
+  padding: 2.5rem 0;
+  font-size: 0.85rem;
+}
+
+.site-footer-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer a:hover { color: var(--ochre); }
+
+@media (max-width: 700px) {
+  .tokushoho-list {
+    grid-template-columns: 1fr;
+  }
+  .tokushoho-list dt {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: none;
+  }
+  .tokushoho-list dd {
+    padding-left: 0;
+    padding-top: 0.2rem;
+    padding-bottom: 1.4rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="brand">瀧波一誠 <span>Issei Takinami</span></div>
+    <a href="index.html" class="back-link">← トップに戻る</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-eyebrow">Legal Notice</div>
+    <h1 class="page-title">特定商取引法に基づく表記</h1>
+    <p class="page-lead">
+      特定商取引に関する法律 第11条(通信販売についての広告)に基づき、本サービスに関する事業者情報および取引条件を以下に表示いたします。
+    </p>
+
+    <dl class="tokushoho-list">
+
+      <dt>販売事業者</dt>
+      <dd>La.Terre(瀧波 一誠)</dd>
+
+      <dt>所在地</dt>
+      <dd>
+        ご請求があれば遅滞なく開示いたします。
+        <small>申込フォーム送信後にご返信するメールにてお伝えします。</small>
+      </dd>
+
+      <dt>連絡先電話番号</dt>
+      <dd>
+        090-6545-7889
+        <small>業務効率上、メールでのご連絡を基本としております。お電話を希望される場合は、メールでお申し付けください。</small>
+      </dd>
+
+      <dt>連絡先メールアドレス</dt>
+      <dd>
+        申込フォーム送信後にご返信するメールにて、ご連絡先をお伝えします。
+        <small>各サービスの申込フォームは、トップページ各サービスカードの「詳細・申込フォームへ」よりご利用いただけます。</small>
+      </dd>
+
+      <dt>運営責任者</dt>
+      <dd>瀧波 一誠</dd>
+
+      <dt>販売価格</dt>
+      <dd>
+        各サービスの販売価格は、商品ごとに以下の通りです(すべて税込)。
+        <ul>
+          <li>商業出版 企画書赤入れセッション:24,200円</li>
+          <li>出版リライト伴走プラン(上位版):49,500円</li>
+          <li>地理総合・地理探究 授業設計レビュー:22,000円</li>
+          <li>ファンタジー世界観 地理診断:33,000円</li>
+          <li>観光導線・地域資源レビュー:55,000円</li>
+        </ul>
+      </dd>
+
+      <dt>商品代金以外の必要料金</dt>
+      <dd>
+        銀行振込でお支払いの場合、振込手数料はお客様のご負担となります。クレジットカード決済(Stripe)の場合、決済手数料はかかりません。
+        <small>消費税は表示価格に含まれています。それ以外に発生する費用はございません。</small>
+      </dd>
+
+      <dt>お支払い方法</dt>
+      <dd>
+        以下のいずれかからお選びいただけます。
+        <ul>
+          <li>クレジットカード決済(Stripe / Visa, Mastercard, JCB, American Express, Diners)</li>
+          <li>銀行振込</li>
+        </ul>
+        <small>お申込みフォーム送信後、内容を確認のうえお返しするご案内メールにて、両方の決済方法をお伝えします。</small>
+      </dd>
+
+      <dt>お支払い時期</dt>
+      <dd>
+        お申込み後、2営業日以内にご案内メールをお送りします。クレジットカード決済の場合は同メール内のお支払いリンクから、銀行振込の場合は同メール記載の口座へ、5営業日以内にお支払いください。
+        <small>ご入金の確認をもって、正式に日程確定となります。</small>
+      </dd>
+
+      <dt>サービス提供時期</dt>
+      <dd>
+        ご入金確認後、お客様と日程を調整し、Zoomにてセッションを実施します。通常はお申込みから2〜4週間以内にセッション日程を確定します。
+        <small>セッション終了後、5営業日以内に納品物(改善メモPDF等)をメールでお送りします。リライト伴走プランは2週間の伴走期間内に複数回のやり取りを行います。</small>
+      </dd>
+
+      <dt>キャンセル・返金規定</dt>
+      <dd>
+        セッション日程確定後のキャンセルは、以下の規定に従います。
+        <ul>
+          <li>セッション5営業日前まで:全額返金(返金時の振込手数料・決済手数料を差し引いた額)</li>
+          <li>セッション4〜2営業日前:50%返金</li>
+          <li>セッション前日・当日:返金なし</li>
+        </ul>
+        <small>ご入金前のキャンセルは、メールにてお申し付けください。お申込み自体を取り下げいたします。</small>
+      </dd>
+
+      <dt>日程変更について</dt>
+      <dd>
+        日程変更は1回まで無料、2回目以降は5,500円(税込)の変更手数料を申し受けます。
+        <small>瀧波側からの中止・延期の場合は、全額返金または代替日程での対応とさせていただきます。</small>
+      </dd>
+
+      <dt>サービスに関する注意事項</dt>
+      <dd>
+        各サービスは個人事業主・個人クリエイター・個人教員等、個人として動かれる方を対象としています。学校・出版社・自治体・観光協会・観光企業など組織としてのご相談・ご依頼は、瀧波が代表理事を務める一般社団法人日本地域地理研究所「戦略地理アドバイザリー」をご案内しています。
+      </dd>
+
+      <dt>動作環境(Zoomに関するもの)</dt>
+      <dd>
+        Zoomを利用可能なPC・タブレット・スマートフォンと、安定したインターネット回線が必要です。
+        <small>ご利用環境のサポートは行っておりません。事前にZoom公式サイトの動作要件をご確認ください。</small>
+      </dd>
+
+    </dl>
+
+    <div class="note-box">
+      <h3>所在地の開示について</h3>
+      <p>
+        個人事業主としての運営のため、本ページ上でのご住所の常時公開は控えさせていただいております。これは消費者庁が示す「通信販売における事業者の住所等の表示」の運用において認められている対応です。
+      </p>
+      <p>
+        ご請求があれば、メールにて遅滞なく開示いたします。各サービスの申込フォーム送信後、または直接のお問い合わせメールにて、お気軽にお申し付けください。
+      </p>
+    </div>
+
+    <div class="last-updated">
+      最終更新: 2026年4月26日
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>© 2026 Issei Takinami. All rights reserved.</div>
+    <div><a href="index.html">トップへ戻る</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

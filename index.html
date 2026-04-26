@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瀧波一誠 | 地理の視点で、次の一歩を整える</title>
+<meta name="description" content="戦略地理学者・瀧波一誠による1対1のレビュー・診断サービス。出版企画書、授業設計、世界観監修、観光導線の4領域で対応。">
+
+<meta property="og:title" content="瀧波一誠 | 地理の視点で、次の一歩を整える">
+<meta property="og:description" content="出版企画、授業設計、ファンタジー世界観、観光コンテンツの4領域で、地理の視点から実戦的なレビューを提供します。">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0908;
+  --ink-soft: #1c1a17;
+  --paper: #f7f1e4;
+  --paper-deep: #ede4d0;
+  --forest: #1f3a2f;
+  --ochre: #b87a3e;
+  --rust: #923d26;
+  --rule: #1c1a17;
+  --rule-soft: #c8bba0;
+  --muted: #5a5248;
+
+  --font-display: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-body: 'Zen Kaku Gothic Antique', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  --font-latin: 'Fraunces', Georgia, serif;
+
+  --max-width: 1200px;
+  --container-pad: 2rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(31, 58, 47, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(184, 122, 62, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.025 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+main, nav, header, section, footer { position: relative; z-index: 1; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; background: none; border: none; color: inherit; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* ナビゲーション */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(247, 241, 228, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--ink);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem var(--container-pad);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.nav-brand span {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--ink);
+  transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--forest);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--forest); }
+.nav-links a:hover::after { width: 100%; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+}
+
+/* ヒーロー */
+.hero {
+  padding: 5rem 0 7rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+
+.hero-globe {
+  position: absolute;
+  top: 50%;
+  right: -12%;
+  transform: translateY(-50%);
+  width: 680px;
+  max-width: 80%;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .hero-globe { right: -40%; width: 120%; opacity: 0.05; }
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink);
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.hero-meta::before {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  background: var(--ink);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  color: var(--ink);
+  max-width: 16ch;
+  margin-bottom: 0;
+}
+
+.hero-title .accent {
+  color: var(--rust);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title .accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.15em;
+  width: 100%;
+  height: 6px;
+  background: var(--ochre);
+  z-index: -1;
+}
+
+.hero-title .latin {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.5em;
+  letter-spacing: 0.05em;
+  color: var(--forest);
+  display: block;
+  margin-top: 1.2rem;
+  line-height: 1;
+}
+
+.hero-lead {
+  font-size: 1.12rem;
+  line-height: 2;
+  color: var(--ink-soft);
+  max-width: 44ch;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 2px solid var(--ink);
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-primary:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+}
+
+.btn-secondary:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--ochre);
+}
+
+.btn-arrow {
+  transition: transform 0.3s ease;
+  font-family: var(--font-latin);
+}
+
+.btn-primary:hover .btn-arrow,
+.btn-secondary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid var(--ink);
+}
+
+.stat-item {
+  text-align: left;
+  padding: 0 1rem;
+  border-right: 1px solid var(--rule-soft);
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.stat-number .unit {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.45em;
+  font-weight: 500;
+  color: var(--forest);
+}
+
+.stat-label {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0;
+  }
+  .stat-item { border-right: none; }
+  .stat-item:nth-child(odd) { border-right: 1px solid var(--rule-soft); }
+}
+
+/* セクション共通 */
+section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--ink);
+}
+
+.section-number {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.2em;
+  color: var(--forest);
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.8vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+  letter-spacing: 0.015em;
+}
+
+.section-title-sub {
+  display: block;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+}
+
+.section-divider svg { flex-shrink: 0; }
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ink);
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  section { padding: 4rem 0; }
+  .section-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* 適合宣言(対象案内) */
+.audience {
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+  padding: 4.5rem 0;
+}
+
+.audience-inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.audience-eyebrow {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: var(--rust);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  font-weight: 500;
+}
+
+.audience-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.015em;
+}
+
+.audience-body p {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--ink-soft);
+  margin-bottom: 1.4rem;
+}
+
+.audience-body p:last-child { margin-bottom: 0; }
+
+.audience-emphasis {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  background: linear-gradient(transparent 60%, rgba(184, 122, 62, 0.22) 60%);
+  padding: 0 0.15em;
+}
+
+.audience-divider {
+  border: none;
+  border-top: 1px solid var(--rule-soft);
+  margin: 2.2rem 0;
+}
+
+.audience-redirect {
+  font-size: 0.94rem;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+.audience-redirect strong {
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.audience-redirect a {
+  color: var(--rust);
+  border-bottom: 1px solid var(--rust);
+  padding-bottom: 1px;
+  font-weight: 500;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.audience-redirect a:hover {
+  color: var(--ochre);
+  border-bottom-color: var(--ochre);
+}
+
+@media (max-width: 768px) {
+  .audience { padding: 3.5rem 0; }
+  .audience-inner { padding: 0 1.5rem; }
+  .audience-body p { font-size: 0.96rem; }
+}
+
+/* 哲学 */
+.philosophy {
+  background: var(--paper-deep);
+  border-bottom: 2px solid var(--ink);
+}
+
+.philosophy-body {
+  max-width: 40rem;
+  margin-left: calc(7rem + 3rem);
+  position: relative;
+}
+
+.philosophy-body p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-body p:last-child { margin-bottom: 0; }
+
+.philosophy-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  padding: 2rem 0 2rem 2rem;
+  border-left: 4px solid var(--rust);
+  margin: 3rem 0;
+  line-height: 1.6;
+  position: relative;
+  background: linear-gradient(to right, rgba(247, 241, 228, 0.8) 0%, transparent 100%);
+}
+
+.philosophy-quote::before {
+  content: '「';
+  font-family: var(--font-display);
+  color: var(--rust);
+  font-size: 2.5rem;
+  line-height: 0;
+  vertical-align: -0.2em;
+  margin-right: -0.3em;
+}
+
+.philosophy-quote::after {
+  content: '」';
+  font-family: var(--font-display);
+  color: var(--rust);
+  font-size: 2.5rem;
+  line-height: 0;
+  vertical-align: -0.2em;
+  margin-left: -0.1em;
+}
+
+@media (max-width: 768px) {
+  .philosophy-body { margin-left: 0; }
+}
+
+/* サービス */
+.services-intro { padding-bottom: 2rem; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.service-card {
+  background: var(--paper);
+  padding: 3.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  transition: all 0.4s ease;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  overflow: hidden;
+}
+
+.service-card:nth-child(2n) { border-right: none; }
+.service-card:nth-last-child(-n+2) { border-bottom: none; }
+
+.service-card:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-number,
+.service-card:hover .service-price,
+.service-card:hover .service-for strong,
+.service-card:hover .service-description,
+.service-card:hover .service-for,
+.service-card:hover .service-meta,
+.service-card:hover .service-cta {
+  color: var(--paper);
+}
+
+.service-card:hover .service-icon svg {
+  stroke: var(--ochre);
+}
+
+.service-card:hover .service-cta {
+  border-bottom-color: var(--ochre);
+}
+
+.service-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule-soft);
+  margin-bottom: 0.5rem;
+}
+
+.service-number {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  transition: color 0.4s ease;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--ink);
+  stroke-width: 1.2;
+  fill: none;
+  transition: stroke 0.4s ease;
+}
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  transition: color 0.4s ease;
+}
+
+.service-meta {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: color 0.4s ease;
+}
+
+.service-meta span {
+  position: relative;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--rule-soft);
+  border-radius: 2px;
+}
+
+.service-card:hover .service-meta span {
+  border-color: rgba(247, 241, 228, 0.3);
+}
+
+.service-for {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  padding-top: 0.5rem;
+  transition: color 0.4s ease;
+}
+
+.service-for strong {
+  display: block;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--rust);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+.service-description {
+  font-size: 0.93rem;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  flex: 1;
+  transition: color 0.4s ease;
+}
+
+.service-price {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  transition: color 0.4s ease;
+}
+
+.service-card:hover .service-price {
+  border-top-color: rgba(247, 241, 228, 0.3);
+}
+
+.service-price small {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 400;
+  transition: color 0.4s ease;
+}
+
+.service-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.08em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--ink);
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.service-cta:hover { gap: 0.9rem; }
+
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card {
+    padding: 2.5rem 1.5rem;
+    border-right: none !important;
+    border-bottom: 1px solid var(--ink) !important;
+  }
+  .service-card:last-child { border-bottom: none !important; }
+  .service-number { font-size: 2.25rem; }
+}
+
+/* 組織案件向け案内バナー */
+.org-redirect-banner {
+  background: var(--paper);
+  border-top: 1px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: 2.5rem 0;
+}
+
+.org-redirect-banner-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.org-redirect-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.org-redirect-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--rust);
+  stroke-width: 1.4;
+  fill: none;
+}
+
+.org-redirect-text {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+.org-redirect-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.org-redirect-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.org-redirect-link:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--ochre);
+}
+
+@media (max-width: 768px) {
+  .org-redirect-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: left;
+  }
+  .org-redirect-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .org-redirect-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 上位版 */
+.upper-tier {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.upper-tier::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--ochre),
+    var(--ochre) 15px,
+    var(--ink) 15px,
+    var(--ink) 30px
+  );
+}
+
+.upper-tier .section-title,
+.upper-tier .section-title-sub {
+  color: var(--paper);
+}
+
+.upper-tier .section-header {
+  border-top-color: var(--ochre);
+}
+
+.upper-tier .section-number {
+  color: var(--ochre);
+}
+
+.upper-tier .section-title-sub {
+  color: rgba(247, 241, 228, 0.6);
+}
+
+.upper-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.upper-lead {
+  font-size: 1.12rem;
+  line-height: 1.95;
+  color: rgba(247, 241, 228, 0.9);
+  margin-bottom: 2.5rem;
+}
+
+.upper-details {
+  list-style: none;
+  padding: 0;
+}
+
+.upper-details li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(247, 241, 228, 0.15);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+.upper-details .label {
+  font-family: var(--font-latin);
+  font-style: italic;
+  color: var(--ochre);
+  letter-spacing: 0.1em;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  min-width: 8rem;
+  font-weight: 600;
+}
+
+.upper-details .value {
+  flex: 1;
+  color: var(--paper);
+}
+
+.upper-sidebar {
+  background: rgba(247, 241, 228, 0.04);
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(247, 241, 228, 0.2);
+  position: relative;
+}
+
+.upper-sidebar::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 4px;
+  background: var(--ochre);
+}
+
+.upper-sidebar .price {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--paper);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.upper-sidebar .price small {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(247, 241, 228, 0.55);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.upper-sidebar p {
+  font-size: 0.9rem;
+  color: rgba(247, 241, 228, 0.7);
+  margin: 1.5rem 0;
+  line-height: 1.85;
+}
+
+.upper-sidebar .btn-primary {
+  background: var(--ochre);
+  color: var(--ink);
+  border-color: var(--ochre);
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.upper-sidebar .btn-primary:hover {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+  box-shadow: 4px 4px 0 var(--ochre);
+}
+
+@media (max-width: 768px) {
+  .upper-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* プロフィール */
+.profile {
+  background: var(--paper-deep);
+  border-bottom: 2px solid var(--ink);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.profile-image-wrap { position: relative; }
+
+.profile-image {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  width: 100%;
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ochre);
+  display: block;
+  filter: contrast(1.05) saturate(0.95);
+}
+
+.profile-image-placeholder {
+  aspect-ratio: 4 / 5;
+  background: var(--ink);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ochre);
+}
+
+.profile-image-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 30px,
+      rgba(247, 241, 228, 0.04) 30px,
+      rgba(247, 241, 228, 0.04) 31px
+    );
+}
+
+.profile-image-placeholder::after {
+  content: 'photo';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: rgba(247, 241, 228, 0.3);
+  letter-spacing: 0.2em;
+}
+
+.profile-caption {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 1.5rem;
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+.profile-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.profile-body .role {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--rust);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.profile-body p {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--ink);
+}
+
+.profile-links a {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink);
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.profile-links a:hover {
+  color: var(--rust);
+  border-bottom-color: var(--rust);
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .profile-image-placeholder { box-shadow: 6px 6px 0 var(--ochre); }
+  .profile-image { box-shadow: 6px 6px 0 var(--ochre); }
+}
+
+/* 実績 */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 2px solid var(--ink);
+}
+
+.credential-item {
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 160px;
+  background: var(--paper);
+  transition: all 0.3s ease;
+}
+
+.credential-item:nth-child(3n) { border-right: none; }
+.credential-item:nth-last-child(-n+3) { border-bottom: none; }
+
+.credential-item:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.credential-item:hover .credential-title,
+.credential-item:hover .credential-subtitle { color: var(--paper); }
+
+.credential-item:hover .credential-category { color: var(--ochre); }
+
+.credential-category {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--rust);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.credential-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.credential-subtitle {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.55;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .credentials-grid { grid-template-columns: repeat(2, 1fr); }
+  .credential-item:nth-child(3n) { border-right: 1px solid var(--ink); }
+  .credential-item:nth-child(2n) { border-right: none; }
+  .credential-item:nth-last-child(-n+3) { border-bottom: 1px solid var(--ink); }
+  .credential-item:nth-last-child(-n+2) { border-bottom: none; }
+}
+
+/* 推薦セクション */
+.endorsement {
+  background: var(--forest);
+  color: var(--paper);
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.endorsement::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(184, 122, 62, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(146, 61, 38, 0.12) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.endorsement-inner { position: relative; z-index: 1; }
+
+.endorsement-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  line-height: 1.5;
+  font-weight: 700;
+  max-width: 36rem;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+}
+
+.endorsement-quote::before {
+  content: '"';
+  display: block;
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 3.5rem;
+  color: var(--ochre);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.endorsement-meta {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(247, 241, 228, 0.7);
+  margin-top: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.endorsement-meta strong {
+  color: var(--ochre);
+  font-weight: 600;
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 52rem;
+  margin: 0 auto;
+  border-top: 2px solid var(--ink);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--ink);
+}
+
+.faq-item:last-child { border-bottom: 2px solid var(--ink); }
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1.85rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question:hover { color: var(--rust); }
+
+.faq-toggle {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  position: relative;
+  margin-top: 0.3rem;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper);
+  transition: all 0.3s ease;
+}
+
+.faq-toggle::before,
+.faq-toggle::after {
+  content: '';
+  position: absolute;
+  background: var(--ink);
+  transition: transform 0.3s ease;
+}
+
+.faq-toggle::before {
+  top: 50%;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.faq-toggle::after {
+  left: 50%;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+.faq-item[open] .faq-toggle { background: var(--ink); }
+
+.faq-item[open] .faq-toggle::before,
+.faq-item[open] .faq-toggle::after { background: var(--paper); }
+
+.faq-item[open] .faq-toggle::after {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
+}
+
+.faq-answer {
+  padding: 0 0 1.85rem;
+  font-size: 0.98rem;
+  line-height: 2;
+  color: var(--ink-soft);
+  max-width: 48rem;
+}
+
+/* 最終CTA */
+.final-cta {
+  background: var(--paper-deep);
+  padding: 7rem 0;
+  text-align: center;
+  border-top: 2px solid var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '✦';
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: var(--rust);
+}
+
+.final-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+  max-width: 28ch;
+  margin: 0 auto 1.5rem;
+}
+
+.final-cta p {
+  font-size: 1.05rem;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+}
+
+.final-cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* フッター */
+.site-footer {
+  background: var(--ink);
+  color: rgba(247, 241, 228, 0.7);
+  padding: 4rem 0 2rem;
+  font-size: 0.87rem;
+  border-top: 8px solid var(--ochre);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(247, 241, 228, 0.12);
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--paper);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.footer-brand + p {
+  line-height: 1.8;
+  font-size: 0.87rem;
+}
+
+.footer-col h5 {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--ochre);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.75rem; }
+.footer-col a:hover { color: var(--ochre); }
+
+.footer-bottom {
+  padding-top: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(247, 241, 228, 0.5);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* アニメーション */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-title,
+  .hero-lead,
+  .hero-actions {
+    animation: fadeUp 0.9s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-title { animation-delay: 0.1s; }
+  .hero-lead { animation-delay: 0.4s; }
+  .hero-actions { animation-delay: 0.65s; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ナビゲーション -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-brand">瀧波一誠 <span>Issei Takinami</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">サービス</a></li>
+      <li><a href="#profile">プロフィール</a></li>
+      <li><a href="#credentials">実績</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <svg class="hero-globe" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#0a0908" stroke-width="1.2">
+      <circle cx="350" cy="350" r="330"/>
+      <circle cx="350" cy="350" r="260" stroke-dasharray="3,6"/>
+      <circle cx="350" cy="350" r="190" stroke-dasharray="3,6"/>
+      <circle cx="350" cy="350" r="120"/>
+      <ellipse cx="350" cy="350" rx="330" ry="80"/>
+      <ellipse cx="350" cy="350" rx="330" ry="160" opacity="0.5"/>
+      <ellipse cx="350" cy="350" rx="330" ry="230" opacity="0.5"/>
+      <ellipse cx="350" cy="350" rx="80" ry="330"/>
+      <ellipse cx="350" cy="350" rx="160" ry="330" opacity="0.5"/>
+      <ellipse cx="350" cy="350" rx="230" ry="330" opacity="0.5"/>
+      <g stroke-width="2">
+        <line x1="350" y1="20" x2="350" y2="50"/>
+        <line x1="350" y1="650" x2="350" y2="680"/>
+        <line x1="20" y1="350" x2="50" y2="350"/>
+        <line x1="650" y1="350" x2="680" y2="350"/>
+      </g>
+    </g>
+    <g font-family="Fraunces, Georgia, serif" font-style="italic" font-size="20" font-weight="600" fill="#0a0908" text-anchor="middle">
+      <text x="350" y="15">N</text>
+      <text x="350" y="695">S</text>
+      <text x="12" y="357">W</text>
+      <text x="688" y="357">E</text>
+    </g>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="hero-meta">A Geographer's Services · Est. 2026</div>
+
+    <h1 class="hero-title">
+      地理の視点で、<br>
+      次の一歩を<br>
+      <span class="accent">整える</span>。
+      <span class="latin">Mapping Your Next Move.</span>
+    </h1>
+
+    <p class="hero-lead">
+      戦略地理学者・瀧波一誠による、1対1のレビュー・診断サービス。<br>
+      出版企画、授業設計、ファンタジー世界観、観光コンテンツ——<br>
+      4つの領域で、実戦的にお手伝いします。
+    </p>
+
+    <div class="hero-actions">
+      <a href="#services" class="btn-primary">
+        サービスを見る
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="#profile" class="btn-secondary">
+        瀧波一誠について
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">20<span class="unit">yrs+</span></div>
+        <div class="stat-label">Teaching Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">#1<span class="unit"></span></div>
+        <div class="stat-label">Amazon Geography</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">55K<span class="unit">+</span></div>
+        <div class="stat-label">X Followers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4<span class="unit">domains</span></div>
+        <div class="stat-label">Fields of Service</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 適合宣言(対象案内) -->
+<section class="audience">
+  <div class="audience-inner">
+    <div class="audience-eyebrow">Who this is for</div>
+    <h2 class="audience-title">このサービスは、こんな方のためのものです。</h2>
+    <div class="audience-body">
+      <p>
+        個人著者として商業出版を準備している方。地理総合・地理探究で、自分の授業を磨きたい先生。ファンタジー世界観を組み立てている個人クリエイター。地域に根を張る個人ガイド・小規模観光事業者。
+      </p>
+      <p>
+        4つの領域に共通するのは、<span class="audience-emphasis">「自分の名前で動く一人の専門家」</span>だということ。だから1対1で、深く、実戦的に向き合います。
+      </p>
+      <hr class="audience-divider">
+      <p class="audience-redirect">
+        一方、<strong>学校・出版社・自治体・観光協会・観光企業など、組織としてのご相談</strong>は、瀧波が代表理事を務める <a href="https://ijrg.or.jp/" target="_blank" rel="noopener">一般社団法人日本地域地理研究所</a> の戦略地理アドバイザリーにてお受けしています。組織の意思決定や予算規模に合わせた設計が必要なため、別の窓口を用意しています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 哲学 -->
+<section class="philosophy">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">01 / Philosophy</span>
+      <h2 class="section-title">
+        なぜ、地理なのか。
+        <span class="section-title-sub">Why geography matters — and why now.</span>
+      </h2>
+    </div>
+
+    <div class="philosophy-body">
+      <p>
+        地理とは、地形や気候を暗記する科目ではありません。それは、人間社会がどこで、なぜ、どのように成立したのかを問う「生存戦略の記録」です。
+      </p>
+
+      <blockquote class="philosophy-quote">
+        地理とは、生存戦略の記録である。
+      </blockquote>
+
+      <p>
+        出版企画、授業、世界観設計、観光コンテンツ——領域は違えど、共通しているのは「読者・学習者・プレイヤー・来訪者にとって、この物語はなぜ成立するのか」という問いです。その問いに、地理という視点は、驚くほど具体的な答えを与えてくれます。
+      </p>
+
+      <p>
+        このサービスは、励ますための相談ではありません。それぞれの現場で直面する「通すため」「届けるため」「立ち上げるため」の論点を、地理の視点から実戦的に整理します。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- セクション区切り羅針盤 -->
+<div class="section-divider" aria-hidden="true">
+  <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#0a0908" stroke-width="1.2">
+      <circle cx="30" cy="30" r="28"/>
+      <circle cx="30" cy="30" r="18" stroke-dasharray="2,3"/>
+      <circle cx="30" cy="30" r="3" fill="#0a0908"/>
+      <line x1="30" y1="5" x2="30" y2="12" stroke-width="2"/>
+      <line x1="30" y1="48" x2="30" y2="55" stroke-width="2"/>
+      <line x1="5" y1="30" x2="12" y2="30" stroke-width="2"/>
+      <line x1="48" y1="30" x2="55" y2="30" stroke-width="2"/>
+    </g>
+  </svg>
+</div>
+
+<!-- サービス -->
+<section id="services">
+  <div class="container services-intro">
+    <div class="section-header">
+      <span class="section-number">02 / Services</span>
+      <h2 class="section-title">
+        4つの領域でお受けしています。
+        <span class="section-title-sub">Four fields, one approach.</span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="services-grid">
+
+    <article class="service-card">
+      <div class="service-card-header">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 10 L30 14 L52 10 L52 50 L30 54 L8 50 Z"/>
+            <line x1="30" y1="14" x2="30" y2="54"/>
+            <path d="M14 18 L24 20" stroke-width="0.8"/>
+            <path d="M14 24 L24 26" stroke-width="0.8"/>
+            <path d="M14 30 L24 32" stroke-width="0.8"/>
+            <path d="M36 20 L46 18" stroke-width="0.8"/>
+            <path d="M36 26 L46 24" stroke-width="0.8"/>
+            <path d="M36 32 L46 30" stroke-width="0.8"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="service-title">商業出版<br>企画書赤入れセッション</h3>
+      <div class="service-meta">
+        <span>Zoom 75分</span>
+        <span>改善メモ返却</span>
+        <span>初月5枠</span>
+      </div>
+      <div class="service-for">
+        <strong>For</strong>
+        専門分野の知見を本にしたい方、連載や発信を商業出版につなげたい方、出版社に持ち込む前に企画を磨きたい方
+      </div>
+      <p class="service-description">
+        事前に企画書または企画メモを提出いただき、Zoom 75分で「企画の通りやすさ」「タイトル・切り口」「読者像」「競合との差」「目次骨子」を赤入れします。励ますための相談ではなく、通る形に寄せるための実戦的レビューです。
+      </p>
+      <div class="service-price">
+        24,200円 <small>税込(クレジットカード・銀行振込対応)</small>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzwAIBSiEEBzb6do2DY0li8Pp2ZzoPMgERWxaNQpzTWlCkPw/viewform?usp=header" target="_blank" rel="noopener" class="service-cta">
+        詳細・申込フォームへ →
+      </a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card-header">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="30,8 52,22 52,52 8,52 8,22"/>
+            <line x1="20" y1="52" x2="20" y2="36"/>
+            <line x1="40" y1="52" x2="40" y2="36"/>
+            <rect x="26" y="36" width="8" height="16" fill="none"/>
+            <line x1="14" y1="28" x2="46" y2="28"/>
+            <circle cx="30" cy="16" r="2.5"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="service-title">地理総合・地理探究<br>授業設計レビュー</h3>
+      <div class="service-meta">
+        <span>Zoom 60分</span>
+        <span>改善メモ返却</span>
+        <span>初月4枠</span>
+      </div>
+      <div class="service-for">
+        <strong>For</strong>
+        高校教員、塾・予備校講師、個人で教材研究をしている教育関係者、地理総合・地理探究の授業づくりに悩む先生
+      </div>
+      <p class="service-description">
+        単元案、年間計画、教材案、探究テーマ案などを事前提出いただき、Zoom 60分で改善の方向性を整理します。20年以上の現場経験と教育系出版社との協働経験を踏まえ、「授業として成立するか、問いが立っているか」を点検します。
+      </p>
+      <div class="service-price">
+        22,000円 <small>税込(クレジットカード・銀行振込対応)</small>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUGqWmeBzP0m3YJNhpuvipkyNEy8kL_Zg4Pg-wAItpLqpjlA/viewform?usp=header" target="_blank" rel="noopener" class="service-cta">
+        詳細・申込フォームへ →
+      </a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card-header">
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 20 L22 14 L38 20 L52 14 L52 46 L38 52 L22 46 L8 52 Z"/>
+            <line x1="22" y1="14" x2="22" y2="46"/>
+            <line x1="38" y1="20" x2="38" y2="52"/>
+            <circle cx="15" cy="30" r="2"/>
+            <circle cx="30" cy="34" r="2"/>
+            <circle cx="45" cy="30" r="2"/>
+            <path d="M15 30 Q22 28 30 34 Q38 36 45 30" stroke-dasharray="2,2" stroke-width="0.8"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="service-title">ファンタジー世界観<br>地理診断</h3>
+      <div class="service-meta">
+        <span>Zoom 60分</span>
+        <span>診断メモ返却</span>
+        <span>初月3枠</span>
+      </div>
+      <div class="service-for">
+        <strong>For</strong>
+        小説家、TRPG制作者、ゲーム企画者、漫画原作者、映像企画者
+      </div>
+      <p class="service-description">
+        地図、設定資料、プロット概要を事前送付いただき、Zoom 60分で「地形・国家配置・都市配置・物流・移動距離・資源と政治」の観点から、世界観の強みと弱点を診断します。Frieren、Alefgard、Duneの世界観分析を継続発信してきた経験から、地理的リアリティの欠落を具体的に指摘します。
+      </p>
+      <div class="service-price">
+        33,000円 <small>税込(クレジットカード・銀行振込対応)</small>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-k7jQD3LDXZo3hcrWh2S9JYZW7MsR6g5AnWyZrckpvW7C9A/viewform?usp=header" target="_blank" rel="noopener" class="service-cta">
+        詳細・申込フォームへ →
+      </a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card-header">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 48 L20 28 L28 38 L38 18 L52 48 Z"/>
+            <circle cx="38" cy="18" r="3" fill="#0a0908" stroke="none"/>
+            <line x1="4" y1="52" x2="56" y2="52"/>
+            <circle cx="20" cy="42" r="1.5" fill="#0a0908" stroke="none"/>
+            <circle cx="32" cy="46" r="1.5" fill="#0a0908" stroke="none"/>
+            <circle cx="45" cy="42" r="1.5" fill="#0a0908" stroke="none"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="service-title">観光導線・<br>地域資源レビュー</h3>
+      <div class="service-meta">
+        <span>Zoom 75分</span>
+        <span>改善メモ返却</span>
+        <span>初月2枠</span>
+      </div>
+      <div class="service-for">
+        <strong>For</strong>
+        個人ガイド、小規模観光事業者、ペンション・宿泊施設経営者、観光関連の個人クリエイター
+      </div>
+      <p class="service-description">
+        観光資料・導線図・既存パンフやWebを事前確認いただき、Zoom 75分で「導線・物語性・地理的強み・回遊性・ターゲットとのズレ」を診断します。KATARISTA・TUNE Method等の設計経験を踏まえ、地理の視点から具体的な改善施策を提示します。
+      </p>
+      <div class="service-price">
+        55,000円 <small>税込(クレジットカード・銀行振込対応)</small>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKBM_intXKxBJBRaXY3DwP8Ar08YQlGdvo5j6DasZansUMCg/viewform?usp=header" target="_blank" rel="noopener" class="service-cta">
+        詳細・申込フォームへ →
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<!-- 組織案件向け案内バナー(補助CTA) -->
+<aside class="org-redirect-banner">
+  <div class="org-redirect-banner-inner">
+    <div class="org-redirect-icon">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="14" width="32" height="28"/>
+        <line x1="8" y1="22" x2="40" y2="22"/>
+        <line x1="16" y1="14" x2="16" y2="6"/>
+        <line x1="32" y1="14" x2="32" y2="6"/>
+        <circle cx="16" cy="32" r="2" fill="currentColor" stroke="none"/>
+        <circle cx="24" cy="32" r="2" fill="currentColor" stroke="none"/>
+        <circle cx="32" cy="32" r="2" fill="currentColor" stroke="none"/>
+      </svg>
+    </div>
+    <div class="org-redirect-text">
+      <strong>組織としてのご相談・ご依頼について</strong>
+      組織予算でのご依頼、成果物を組織内で共有・活用される場合、複数人を巻き込まれる場合は、瀧波が代表理事を務める一般社団法人日本地域地理研究所「戦略地理アドバイザリー」をご案内しています。スコーピングセッション(18万円)、スポット監修・ミニ研修(25万円)、ライト診断(30万円)、本格診断・継続アドバイザリー等、規模に応じた商品をご用意しています。
+    </div>
+    <a href="https://ijrg.or.jp/advisory/" target="_blank" rel="noopener" class="org-redirect-link">
+      法人窓口を見る →
+    </a>
+  </div>
+</aside>
+
+<!-- 上位版 -->
+<section class="upper-tier">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">02+ / Extended</span>
+      <h2 class="section-title">
+        より踏み込んだ伴走プラン
+        <span class="section-title-sub">For those heading to their final pitch.</span>
+      </h2>
+    </div>
+
+    <div class="upper-content">
+      <div>
+        <p class="upper-lead">
+          すでに出版社との面談が近い方、赤入れセッション後の改訂版を再レビューしてほしい方向けの、伴走型プランです。初回の赤入れから、改訂版の再レビュー、出版社への送付メール本文のテンプレまでを2週間の範囲で整えます。
+        </p>
+
+        <ul class="upper-details">
+          <li><span class="label">Form</span><span class="value">初回セッション(75分)+改訂版再レビュー</span></li>
+          <li><span class="label">Duration</span><span class="value">2週間</span></li>
+          <li><span class="label">Deliverables</span><span class="value">赤入れPDF + 改訂版コメント + 送付メール本文テンプレ</span></li>
+          <li><span class="label">Slots</span><span class="value">月2枠限定</span></li>
+        </ul>
+      </div>
+
+      <aside class="upper-sidebar">
+        <div class="price">49,500円<small>税込(クレジットカード・銀行振込対応)</small></div>
+        <p>
+          出版社との面談前、最後にもう一度プロの目を通したい方へ。企画書の改訂から、送付時の最初の一通までを整えます。
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzwAIBSiEEBzb6do2DY0li8Pp2ZzoPMgERWxaNQpzTWlCkPw/viewform?usp=header" target="_blank" rel="noopener" class="btn-primary">
+          リライト伴走を申込む
+          <span class="btn-arrow">→</span>
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- プロフィール -->
+<section id="profile" class="profile">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">03 / Profile</span>
+      <h2 class="section-title">
+        瀧波 一誠
+        <span class="section-title-sub">Issei Takinami — Strategic Geographer.</span>
+      </h2>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-image-wrap">
+        <img src="profile.jpg" alt="瀧波一誠" class="profile-image">
+        <div class="profile-caption">Portrait, 2026</div>
+      </div>
+
+      <div class="profile-body">
+        <h3>瀧波 一誠</h3>
+        <div class="role">戦略地理学者 / (一社)日本地域地理研究所 代表理事</div>
+
+        <p>
+          2005年以降、群馬県内の私立中高で20年以上にわたり地理教育に従事。教壇に立ちながら、戦略地理学者として出版・メディア監修・コンテンツ制作・教材開発・観光アドバイザリー等の領域で活動しています。
+        </p>
+
+        <p>
+          単著『世界の「なぜ？」がまるわかり！ 面白すぎる地理の話』(産業編集センター、2026年3月刊)はAmazon地理・地学ジャンルで2026年3月末にデイリー1位を獲得、2026年8月には新刊刊行予定。TV朝日『グッド！モーニング』『日曜くりぃむ雑学』、NHK Eテレ『漢字ふむふむ』にて監修・出演を担当。複数の教育系出版社、観光メディア『トラベルボイス』との協働も進行中。
+        </p>
+
+        <p>
+          地理の視点を、教育・出版・エンターテインメント・地域——領域を横断して接続することに関心があり、Substack『Geomystic』では英語圏向けに世界観と地理を結ぶ分析を継続しています。
+        </p>
+
+        <div class="profile-links">
+          <a href="https://twitter.com/mokosamurai777" target="_blank" rel="noopener">X — @mokosamurai777</a>
+          <a href="https://note.com/mokosamurai" target="_blank" rel="noopener">note</a>
+          <a href="https://geomystic.substack.com" target="_blank" rel="noopener">Substack『Geomystic』</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 実績 -->
+<section id="credentials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">04 / Credentials</span>
+      <h2 class="section-title">
+        実績・メディア掲載
+        <span class="section-title-sub">Where the work appears.</span>
+      </h2>
+    </div>
+
+    <div class="credentials-grid">
+
+      <div class="credential-item">
+        <span class="credential-category">Publication</span>
+        <div class="credential-title">『面白すぎる地理の話』</div>
+        <div class="credential-subtitle">産業編集センター / 2026年3月刊<br>Amazon地理書 2026年3月末デイリー1位</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">Upcoming</span>
+        <div class="credential-title">新刊刊行予定</div>
+        <div class="credential-subtitle">2026年8月予定</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">Co-author</span>
+        <div class="credential-title">共著・編集協力</div>
+        <div class="credential-subtitle">WAVE出版 ほか</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">TV Supervision</span>
+        <div class="credential-title">TV朝日</div>
+        <div class="credential-subtitle">『グッド！モーニング』<br>『日曜くりぃむ雑学』ほか</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">TV Supervision</span>
+        <div class="credential-title">NHK Eテレ</div>
+        <div class="credential-subtitle">『漢字ふむふむ』<br>監修・出演</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">Serial</span>
+        <div class="credential-title">NewsPicks</div>
+        <div class="credential-subtitle">「地理ソムリエになろう！」連載中</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">Collaboration</span>
+        <div class="credential-title">教育系出版社・観光メディアとの協働</div>
+        <div class="credential-subtitle">教材開発・連載・コンテンツ監修<br>『トラベルボイス』連載 ほか</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">Career</span>
+        <div class="credential-title">地理教育 20年+</div>
+        <div class="credential-subtitle">群馬県内の私立中高にて<br>教壇に立つ</div>
+      </div>
+
+      <div class="credential-item">
+        <span class="credential-category">International</span>
+        <div class="credential-title">Substack『Geomystic』</div>
+        <div class="credential-subtitle">英語圏向けに発信中</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 推薦 -->
+<section class="endorsement">
+  <div class="container">
+    <div class="endorsement-inner">
+      <p class="endorsement-quote">
+        地理は、世界を読み解くためのOSである。
+      </p>
+      <div class="endorsement-meta">
+        — 瀧波一誠が一貫して発信してきた視座<br>
+        <strong>X 55,000+ followers / Substack『Geomystic』subscribers include Tomas Pueyo</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">05 / FAQ</span>
+      <h2 class="section-title">
+        よくあるご質問
+        <span class="section-title-sub">Before you book.</span>
+      </h2>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          個人と法人、どちらに相談すべきですか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          以下の2つの軸でご判断ください。<br><br>
+          <strong>① お支払いの主体</strong>(ご自身の財布か、組織の予算か)<br>
+          <strong>② 成果物の利用先</strong>(個人活動に使うか、組織内で共有・活用するか)<br><br>
+          ・<strong>個人払い × 個人活動に使う</strong> → 本ページのレビューサービスをご利用ください<br>
+          ・<strong>個人払い × 組織活動に使う</strong> → 法人窓口をおすすめしますが、自費でのスキルアップ目的等は本ページでも歓迎です<br>
+          ・<strong>組織払い × 組織活動に使う</strong> → 一般社団法人日本地域地理研究所「戦略地理アドバイザリー」(<a href="https://ijrg.or.jp/advisory/" target="_blank" rel="noopener" style="color: var(--rust); border-bottom: 1px solid var(--rust);">https://ijrg.or.jp/advisory/</a>)をご利用ください<br><br>
+          法人窓口では、戦略地理 スコーピングセッション(18万円)・スポット監修・ミニ研修(25万円)・ライト診断(30万円)・本格診断・継続アドバイザリー等、規模に応じた商品を用意しています。<br><br>
+          判断に迷われる場合は、お気軽にお申込みください。内容を拝見し、必要に応じてより適した形をご案内いたします。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          決済方法は何が使えますか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          クレジットカード(Stripe)と銀行振込のどちらかをお選びいただけます。お申込みフォーム送信後、内容を確認のうえお返しするご案内メールにて、両方の決済方法をお伝えします。Stripeでは Visa / Mastercard / JCB / American Express / Diners がご利用いただけます。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          どのような方が申し込まれていますか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          出版レビューは、専門知を本にしたい研究者・専門職の方、note/Substackなどで継続発信されている方。授業設計レビューは、高校地理担当教員、塾・予備校講師、個人で教材研究をしている教育関係者。世界観診断は、小説家・TRPG制作者・ゲーム企画者などのクリエイター。観光レビューは、個人ガイド・小規模観光事業者・ペンション経営者・観光関連の個人クリエイターが中心です。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          事前提出の資料がまだ完成していません。申込可能でしょうか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          お申込み時点で完成していなくても問題ありません。セッションの3営業日前までにご提出いただければ十分です。構想段階の方も、アウトラインやメモの形でご相談いただけます。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          領収書は発行されますか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          クレジットカードでお支払いの場合、Stripeより自動で領収書が発行されます。銀行振込でお支払いの場合は、ご入金確認後にPDF形式でお送りします。宛名のご指定があれば、お申込みフォームの自由記述欄または案内メールへのご返信にてお知らせください。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          キャンセルポリシーを教えてください。
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          セッション5営業日前までは全額返金(振込手数料を差し引いた額)、4〜2営業日前は50%返金、前日・当日は返金対応ができません。日程変更は1回まで無料、2回目以降は5,500円の変更手数料となります。詳細はお申込みフォームの同意項目に記載しています。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          法人・組織としての相談はどのように依頼できますか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          学校・出版社・自治体・観光協会・観光企業など、組織としてのご相談・ご依頼は、瀧波が代表理事を務める一般社団法人日本地域地理研究所「戦略地理アドバイザリー」までお願いいたします。<br><br>
+          月額5万円のブリーフ購読、初期相談(8万円)、スコーピングセッション(18万円)、スポット監修・ミニ研修(25万円)、ライト診断(30万円)から、本格診断(80〜150万円)、継続アドバイザリー、世界観監修パッケージまで、規模と予算に応じた商品をご用意しています。<br><br>
+          ▶ <a href="https://ijrg.or.jp/advisory/" target="_blank" rel="noopener" style="color: var(--rust); border-bottom: 1px solid var(--rust);">戦略地理アドバイザリー(法人窓口)</a>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          海外在住です。英語での対応は可能ですか?
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          世界観診断については、Substack『Geomystic』を通じた英語圏向けの発信を継続しており、英語での対応も可能です。ご相談ください。他の3領域については、現時点では日本語でのご提供を基本としております。
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- 最終CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="final-cta-title">
+      次の一歩を、<br>
+      実戦目線で整える。
+    </h2>
+    <p>
+      各サービスは先着順で、初月の枠数に達し次第締め切ります。<br>
+      まずは申込フォームより、お気軽にご連絡ください。<br>
+      内容確認後、2営業日以内に日程と振込先のご案内をお送りします。
+    </p>
+    <div class="final-cta-actions">
+      <a href="#services" class="btn-primary">
+        サービス一覧へ戻る
+        <span class="btn-arrow">↑</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">瀧波一誠 — Issei Takinami</div>
+        <p>
+          戦略地理学者 / (一社)日本地域地理研究所 代表理事<br>
+          群馬県高崎市を拠点に、地理の視点から教育・出版・メディア・観光の各領域で活動しています。
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">4つの領域</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#credentials">実績</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://twitter.com/mokosamurai777" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://note.com/mokosamurai" target="_blank" rel="noopener">note</a></li>
+          <li><a href="https://geomystic.substack.com" target="_blank" rel="noopener">Substack</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Issei Takinami. All rights reserved.
+        <span style="margin-left: 1.25rem; opacity: 0.85;">
+          <a href="tokushoho.html" style="border-bottom: 1px solid currentColor; padding-bottom: 1px;">特定商取引法に基づく表記</a>
+        </span>
+      </div>
+      <div style="font-family: var(--font-latin); font-style: italic;">Geography as Survival Strategy.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .credential-item').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  }
+</script>
+
+</body>
+</html>
